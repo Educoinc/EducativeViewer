@@ -236,7 +236,7 @@ export default function Code({ data }: { data: CodeComponentData }) {
                 fontSize: 14,
                 lineNumbers: "on",
                 renderLineHighlight: "line",
-                scrollbar: { vertical: "auto", horizontal: "auto" },
+                scrollbar: { vertical: "visible", horizontal: "visible", alwaysConsumeMouseWheel: false, },
                 overviewRulerLanes: 0,
                 hideCursorInOverviewRuler: true,
                 contextmenu: false,

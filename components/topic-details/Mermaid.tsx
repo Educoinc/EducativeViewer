@@ -215,9 +215,7 @@ export default function Mermaid({ data }: { data: MermaidData }) {
           theme: isDark ? "dark" : "default",
         });
 
-        const id = `ev-mermaid-${data.comp_id}-${Math.random()
-          .toString(36)
-          .slice(2, 8)}`;
+        const id = `ev-mermaid-${data.comp_id}`;
         const result = await window.mermaid.render(id, diagramText);
         if (!cancelled) setRawSvg(result.svg);
       } catch (err) {
